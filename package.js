@@ -2,7 +2,7 @@ Package.describe({
   name: 'adornis:typescript',
   version: '0.9.3',
   summary: 'TypeScript for Meteor',
-  git: 'https://github.com/barbatus/typescript',
+  git: 'https://github.com/Adornis/typescript',
   documentation: 'README.md',
 });
 
