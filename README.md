@@ -15,21 +15,6 @@ Default compiler options as JSON:
 }
 ```
 
-## Path mappings
-
-TypeScript paths mapping is supported since `0.6.0`, though,
-with some limitations. It works only for local files and for `module: commonjs`.
-
-You can now use paths like `imports/client/foo` instead of Meteor rooted
-paths like `/imports/client/foo` if you add to the `config.json` as follows:
-
-```json
-  "baseUrl": ".",
-  "paths": {
-    "*": ["*"]
-  }
-```
-
 ## Package Structure
 
 This package uses (directly or indirectly) three other packages, which are worth to mention:
