@@ -1,6 +1,6 @@
 Package.describe({
   name: 'adornis:typescript',
-  version: '0.9.5',
+  version: '0.9.6',
   summary: 'TypeScript for Meteor, based on barbatus:typescript',
   git: 'https://github.com/Adornis/typescript',
   documentation: 'README.md',
@@ -17,7 +17,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.4.1');
 
   api.use('isobuild:compiler-plugin@1.0.0');
-  api.use('adornis:typescript-compiler@0.12.5');
+  api.use('adornis:typescript-compiler@0.12.6');
 
   api.imply('modules@0.11.6');
 
