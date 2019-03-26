@@ -1,6 +1,6 @@
 Package.describe({
   name: 'adornis:typescript',
-  version: '0.9.6',
+  version: '0.9.7',
   summary: 'TypeScript for Meteor, based on barbatus:typescript',
   git: 'https://github.com/Adornis/typescript',
   documentation: 'README.md',
@@ -10,7 +10,7 @@ Package.registerBuildPlugin({
   name: 'typescript',
   use: ['adornis:typescript-compiler'],
   sources: ['plugin.js'],
-  npmDependencies: { typescript: '3.2.2' },
+  npmDependencies: { typescript: '3.3.4000' },
 });
 
 Package.onUse(function(api) {
