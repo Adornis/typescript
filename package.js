@@ -1,6 +1,6 @@
 Package.describe({
   name: 'adornis:typescript',
-  version: '0.9.9',
+  version: '0.9.10',
   summary: 'TypeScript for Meteor, based on barbatus:typescript',
   git: 'https://github.com/Adornis/typescript',
   documentation: 'README.md',
@@ -10,7 +10,9 @@ Package.registerBuildPlugin({
   name: 'typescript',
   use: ['adornis:typescript-compiler'],
   sources: ['plugin.js'],
-  npmDependencies: { typescript: '3.4.2' },
+  npmDependencies: {
+    typescript: process.env.TYPESCRIPT_EXTERNAL_PATH ? 'file://' + process.env.TYPESCRIPT_EXTERNAL_PATH : '3.4.2',
+  },
 });
 
 Package.onUse(function(api) {
@@ -22,12 +24,4 @@ Package.onUse(function(api) {
   api.imply('modules@0.11.6');
 
   api.imply('barbatus:typescript-runtime@1.1.0');
-});
-
-Package.onTest(function(api) {
-  api.use('tinytest@1.0.12');
-  api.use('adornis:typescript');
-
-  api.addFiles('tests/runtime-tests.ts', 'client');
-  api.addFiles('tests/runtime-react-tests.tsx', 'client');
 });
