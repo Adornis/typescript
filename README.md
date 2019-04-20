@@ -1,5 +1,12 @@
 ## TypeScript Compiler for Meteor
 
+### Env Vars
+
+- `TYPESCRIPT_EXTERNAL_PATH` can be set to the path of a typescript node package anywhere on your computer to be able to use a different version that is used in the package by default
+- `TYPESCRIPT_DISABLE_WARNINGS` can be used to only show lifecycle information and errors
+
+### Default Compiler Information
+
 TypeScript files are compiled into ES5 and CommonJS modules by default.
 
 Default compiler options as JSON:
