@@ -2,7 +2,7 @@
 
 ### Env Vars
 
-- `TYPESCRIPT_EXTERNAL_PATH` can be set to the path of a typescript node package anywhere on your computer to be able to use a different version that is used in the package by default
+- `TYPESCRIPT_EXTERNAL_PATH` can be set to the path of a typescript node package anywhere on your computer to be able to use a different version that is used in the package by default -- only works when you clone locally, ask Meteor why, I don't know
 - `TYPESCRIPT_DISABLE_WARNINGS` can be used to only show lifecycle information and errors
 
 ### Default Compiler Information
