@@ -18,19 +18,17 @@ Default compiler options as JSON:
   "moduleResolution": "node",
   "experimentalDecorators": true,
   "emitDecoratorMetadata": true,
-  "sourceMap": true
+  "sourceMap": true,
+  "importHelpers": true
 }
 ```
 
 ## Package Structure
 
-This package uses (directly or indirectly) three other packages, which are worth to mention:
+This package uses (directly or indirectly) two other packages which are worth mentioning:
 
 [typescript-compiler](https://github.com/adornis/typescript-compiler) - exports a Meteor TypeScript compiler that implements Meteor compiler API. TypeScript compiler in its turn uses [meteor-typescript](https://github.com/adornis/meteor-typescript) package’s API
 to compile TypeScript source code incrementally on file changes.
-
-[typescript-runtime](https://github.com/adornis/typescript-runtime) - currently contains TypeScript helpers,
-which allow to configure behavior of some parts of the compiled TypeScript code for special use cases. One of the use cases is usage with the old browsers.
 
 ## Credits
 

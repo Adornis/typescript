@@ -11,7 +11,7 @@ Package.registerBuildPlugin({
   use: ['adornis:typescript-compiler'],
   sources: ['plugin.js'],
   npmDependencies: {
-    typescript: process.env.TYPESCRIPT_EXTERNAL_PATH ? 'file://' + process.env.TYPESCRIPT_EXTERNAL_PATH : '3.6.3',
+    typescript: process.env.TYPESCRIPT_EXTERNAL_PATH ? 'file://' + process.env.TYPESCRIPT_EXTERNAL_PATH : '3.7.2',
   },
 });
 
@@ -22,6 +22,4 @@ Package.onUse(function(api) {
   api.use('adornis:typescript-compiler@0.12.14');
 
   api.imply('modules@0.11.6');
-
-  api.imply('barbatus:typescript-runtime@1.1.0');
 });
