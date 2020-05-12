@@ -1,3 +1,10 @@
+# Deprecation notice
+
+Announcement by @perbergland:
+This package is now deprecated and stuck on version 0.9.15 with Typescript 3.7.
+
+For newer versions, you can migrate to refapp:typescript 0.9.16 or later or check if there are other forks available, please check via https://techgaun.github.io/active-forks/index.html#Adornis/typescript.
+
 ## TypeScript Compiler for Meteor
 
 ### Env Vars
